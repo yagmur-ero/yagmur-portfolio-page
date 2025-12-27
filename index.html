@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yağmur's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="projects.html" target="_blank">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="home">
+           <h1>Yağmur Erocağı</h1>
+           <p>Persistent & Curious Software Student</p>
+           <img src="profile.jpeg" alt="My Photo">
+        </div>
+    </header>
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>I am a first year Software Engineering student at TAMK, passionate about software development and problem solving.</p>
+        <p>I went to Çorum Atatürk Anatolian High School in high school. And i successfully graduated from there with a science and maths degree.</p>
+        <p>Interest in Cloud technologies, Backend Development, and IT troubleshooting.</p>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>Basic proficiency in Java, including variables, control structures, and methods </li>
+          <li>Introductory knowledge of HTML and web development fundamentals</li>
+          <li>Experience connecting to school servers using WSL (Windows Subsystem for Linux)</li>
+          <li>Basic understanding of Cybersecurity principles (Edukamu certificate)</li>
+          <h2>Languages:</h2>
+          <ul>
+            <li>Turkish(native language)</li>
+            <li>English(B2 level Working Proficiecy)</li>
+            <li>Finnish(I just started to learn but improving it so for now it's A1.2 level.)</li>
+          </ul>
+        </ul>
+      </section>
+
+      
+      <section id="contact">
+          <h2>Contact</h2>
+          <p><a href="https://www.linkedin.com/in/yagmur-erocagi-7a78bb360/" target="_blank">View my LinkedIn</a></p>
+          <p><a href="https://github.com/yagmur-ero" target="_blank">View my GitHub</a></p>
+          <p><a href="https://acrobat.adobe.com/id/urn:aaid:sc:EU:8e10e633-688a-4d5c-ab39-e61a302d82c0" target="_blank">My CV</a></p>        
+          <p><button id="cvBtn">Download CV</button></p>
+        </section>
+      
+        <script>
+          document.getElementById("cvBtn").addEventListener("click", () => {
+          window.open("https://acrobat.adobe.com/id/urn:aaid:sc:EU:8e10e633-688a-4d5c-ab39-e61a302d82c0", "_blank");
+        });
+        </script>
+
+    </main>
+      <script>
+        const navLinks = document.querySelectorAll("nav ul li a");
+        navLinks.forEach(link => {
+        link.addEventListener("click", () => {
+        navLinks.forEach(l => l.classList.remove("active"));
+        link.classList.add("active");
+        });
+      });
+      </script>
+
+    <footer>
+      <p>© 2025 Yağmur's Portfolio. All rights reserved.</p>
+    </footer>  
+</body>
+</html>

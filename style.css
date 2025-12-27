@@ -1,0 +1,130 @@
+
+/*General style part*/
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(135deg,#8360c3 ,#ffb6c1 );
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+header img {
+  width: 150px;
+  border-radius: 50%;
+  margin-top: 15px;
+  border: 5px solid ;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/*Section Layout*/
+
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: rgb(240, 235, 239);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+  background: linear-gradient(135deg, #8360c3, #ffb6c1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 15px;
+}
+
+#contact a {
+  text-decoration: none;
+}
+
+#contact a:hover {
+  color: rgb(132, 17, 116);
+  border-bottom: 2px solid rgb(132, 27, 116);
+}
+
+/* Box Effect for Projects */
+
+.project-title{
+ background: linear-gradient(135deg, #8360c3, #ffb6c1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.project {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.project a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #ca229d;
+  text-decoration: none;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+/* Footer*/
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/*Js to change the link's color actively.*/
+
+nav ul li a.active {
+  border-bottom: 2px solid rgb(117, 27, 104);
+}
+
+/*For the CV button */
+
+#cvBtn {
+  background-color: #f3ceed;
+  color: rgb(96, 30, 80);
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#cvBtn:hover {
+  background-color: rgb(132, 17, 116);
+}
