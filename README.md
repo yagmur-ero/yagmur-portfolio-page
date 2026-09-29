@@ -11,10 +11,11 @@ coursework at TAMK, showcasing basic frontend fundamentals.
 - Basic personal branding (profile section, project showcase)
 
 ## Tech Stack
-HTML5, CSS3
+HTML5, CSS3, JavaScript, GitHub Pages
 
 ## Files
-- `index.html` — home page
+- `index.html` — home page (includes small JavaScript for the
+  active navigation link and the CV button)
 - `projects.html` — projects showcase page
 - `style.css` — styling and layout
 
